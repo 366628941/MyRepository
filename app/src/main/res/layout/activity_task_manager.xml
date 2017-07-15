@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.iphonesave.activity.AppManagerActivity">
+    <TextView
+        android:id="@+id/r_tv"
+        style="@style/title_style"
+        android:text="程序管理器"/>
+    <LinearLayout
+        android:id="@+id/r_ll"
+        android:layout_below="@id/r_tv"
+        android:background="#3000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/tv2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_below="@id/r_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        >
+        <ListView
+            android:id="@+id/process_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/process_ll"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="visible">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在玩命加载。。。"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/frame_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"/>
+    </FrameLayout>
+<LinearLayout
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <Button
+        android:id="@+id/bt_1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="全选"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/bt_2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="反选"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/bt_3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="清理"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/bt_4"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="设置"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+
+</RelativeLayout>

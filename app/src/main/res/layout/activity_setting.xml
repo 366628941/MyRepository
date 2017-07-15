@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/title_style"
+        android:text="设置中心" />
+
+    <com.example.lenovo.iphonesave.view.ItemRelative
+        android:id="@+id/item_rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/set_first_rl_selector"
+        android:clickable="true"
+        app:mytext="开启自动更新" />
+
+    <com.example.lenovo.iphonesave.view.ItemRelative
+        android:id="@+id/item_rl_root_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/set_middle_rl_selector"
+        android:clickable="true"
+        app:mytext="开启黑名单拦截" />
+    <com.example.lenovo.iphonesave.view.ItemRelative
+        android:id="@+id/item_rl_root_huojian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/set_middle_rl_selector"
+        android:clickable="true"
+        app:mytext="开启小火箭" />
+
+    <com.example.lenovo.iphonesave.view.ItemRelative
+        android:id="@+id/item_rl_root_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/set_middle_rl_selector"
+        android:clickable="true"
+        app:mytext="开启归属地显示" />
+
+    <com.example.lenovo.iphonesave.view.ItemRelative
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/set_last_rl_selector"
+        android:clickable="true"
+        app:mytext="开启程序狗看门锁" />
+
+
+    <!--自定义控件-->
+    <com.example.lenovo.iphonesave.view.SettingRelative
+        android:id="@+id/item_rl_bselect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:bigtitle="号码归属地弹窗背景选择："
+        app:smalltitle="金属灰" />
+
+
+</LinearLayout>

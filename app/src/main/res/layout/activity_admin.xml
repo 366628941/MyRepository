@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.iphonesave.activity.AdminActivity">
+
+    <TextView
+        style="@style/title_style"
+        android:text="高级工具" />
+
+    <Button
+        android:id="@+id/select_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dg_btn_confirm_select"
+        android:text="号码归属地查询" />
+
+</LinearLayout>

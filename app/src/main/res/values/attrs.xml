@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ItemRelative">
+        <attr name="mytext" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="SettingRelative">
+        <attr name="bigtitle" format="string"/>
+        <attr name="smalltitle" format="string"/>
+    </declare-styleable>
+
+</resources>

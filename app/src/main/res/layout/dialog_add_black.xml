@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:text="请添加黑名单号码"
+        style="@style/title_style"/>
+    <EditText
+        android:id="@+id/black_dialog_et_phone"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:hint="请输入号码"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:id="@+id/black_dialog_rg"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/black_dialog_rb_phone"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="电话"
+            android:checked="true"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/black_dialog_rb_sms"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="短信"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/black_dialog_rb_all"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="全部"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/black_dialog_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="@drawable/dialog_select"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/black_dialog_btn_ok"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:text="确定"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:background="@drawable/dialog_select"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

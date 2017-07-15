@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/blue_bkg">
+
+        <ImageView
+            android:id="@+id/rl_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/save" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rl_iv"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="苹果卫士"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:text="我就是我，颜色不一样的烟火！我就是我，颜色不一样的烟火！我就是我，颜色不一样的烟火！"
+                android:textColor="#f00"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:src="@mipmap/setting" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/main_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"></GridView>
+
+
+</LinearLayout>

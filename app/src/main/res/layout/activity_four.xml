@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:gaga="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        style="@style/title_style"
+        android:text="4恭喜设置完成"/>
+
+
+    <com.example.lenovo.iphonesave.view.ItemRelative
+        android:id="@+id/four_irl"
+        android:clickable="true"
+        android:onClick="click"
+        android:background="@drawable/dialog_select"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        gaga:mytext="开启防盗保护"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/four_tv"
+        android:layout_width="wrap_content"
+        android:text="手机防盗已近关闭"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@android:drawable/presence_invisible"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@android:drawable/presence_invisible"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@android:drawable/presence_invisible"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@android:drawable/presence_online"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/step_4"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:onClick="pre"
+            android:clickable="true"
+            android:background="@drawable/dialog_select"
+            android:layout_width="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/pre"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="60dp"/>
+
+        <ImageView
+            android:onClick="next"
+            android:clickable="true"
+            android:background="@drawable/dialog_select"
+            android:layout_width="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/next"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="60dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
